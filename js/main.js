@@ -41,7 +41,7 @@ function checkIfPlayerWon(symbol){
 
 	if($('.bx1').hasClass(symbol) && $('.bx2').hasClass(symbol) && $('.bx3').hasClass(symbol) && $('.bx4').hasClass(symbol)) {
 	return true;
-	} else if ($('.bx1').hasClass(symbol) && $('.sq5').hasClass(symbol) && $('.sq').hasClass(symbol)){
+	} else if ($('.bx5').hasClass(symbol) && $('.bx6').hasClass(symbol) && $('.sq7').hasClass(symbol) && $('.sq8').hasClass(symbol)){
 			return true;
 		} else if ($('.sq7').hasClass(symbol) && $('.sq8').hasClass(symbol) && $('.sq9').hasClass(symbol)){
 			return true;
@@ -60,7 +60,7 @@ function checkIfPlayerWon(symbol){
 		}
 	}
 
-	
+
 });
 
 
