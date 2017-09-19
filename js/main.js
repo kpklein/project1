@@ -64,7 +64,7 @@ var playing = true;
 
 var wins = [];
 
-// Winning vertically
+// Winning vertically **done**
 wins[0]  = new Array(0, 5,  10, 15, 20);
 wins[1]  = new Array(1, 6,  11, 16, 21;
 wins[2]  = new Array(2, 7,  12, 17, 22);
@@ -79,10 +79,9 @@ wins[8] = new Array(15, 16, 17, 18, 19);
 wins[9] = new Array(20, 21, 22, 23, 24);
 
 // Winning diagonally, left to right
-wins[13] = new Array(14, 22, 30, 38);
-wins[14] = new Array(7, 15, 23, 31, 39);
-wins[15] = new Array(0, 8, 16, 24, 32, 40);
-wins[16] = new Array(1, 9, 17, 25, 33, 41);
+wins[13] = new Array(5, 11, 17, 23);
+wins[14] = new Array(0, 6, 12, 18, 24);
+wins[15] = new Array(1, 7, 13, 19);
 
 //Winning diagonally, right to left
 wins[19] = new Array(20, 26, 32, 38);
