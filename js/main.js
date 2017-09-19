@@ -66,10 +66,10 @@ var wins = [];
 
 // Winning vertically **done**
 wins[0]  = new Array(0, 5,  10, 15, 20);
-wins[1]  = new Array(1, 6,  11, 16, 21;
+wins[1]  = new Array(1, 6,  11, 16, 21);
 wins[2]  = new Array(2, 7,  12, 17, 22);
 wins[3]  = new Array(3, 8, 13, 18, 23);
-wins[4]  = new Array(4, 9, 14, 19, 24;
+wins[4]  = new Array(4, 9, 14, 19, 24);
 
 // Winning horizontally **done**
 wins[5]  = new Array(0, 1,  2,  3,  4);
@@ -84,10 +84,10 @@ wins[14] = new Array(0, 6, 12, 18, 24);
 wins[15] = new Array(1, 7, 13, 19);
 
 //Winning diagonally, right to left
-wins[19] = new Array(20, 26, 32, 38);
-wins[20] = new Array(13, 19, 25, 31, 37);
-wins[21] = new Array(6,  12, 18, 24, 30, 36);
-wins[22] = new Array(5,  11, 17, 23, 29, 35);
+wins[19] = new Array(9, 13, 17, 21);
+wins[20] = new Array(4, 8, 12, 16, 20);
+wins[21] = new Array(3,  7, 11, 15);
+
 
 
 // while (playing) {
