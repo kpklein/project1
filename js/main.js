@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 
 	var winningPossibilities = [[0, 5,  10, 15, 20], [1, 6,  11, 16, 21],[2, 7,  12, 17, 22],[3, 8, 13, 18, 23],[4, 9, 14, 19, 24],[0, 5,  10, 15, 20],[1, 6,  11, 16, 21],[2, 7,  12, 17, 22],[3, 8, 13, 18, 23],[4, 9, 14, 19, 24],[1, 7, 13, 19],[9, 13, 17, 21],[4, 8, 12, 16, 20],[3,  7, 11, 15]]
-	;
+	
 
 
 // //Winning diagonally, right to left
@@ -77,11 +77,7 @@ $(document).ready(function(){
 
 
 
-// wins[0]  = new Array(0, 5,  10, 15, 20);
-// wins[1]  = new Array(1, 6,  11, 16, 21);
-// wins[2]  = new Array(2, 7,  12, 17, 22);
-// wins[3]  = new Array(3, 8, 13, 18, 23);
-// wins[4]  = new Array(4, 9, 14, 19, 24);
+
 
 // // function checkIfPlayerWon(symbol){
 
@@ -149,8 +145,5 @@ $(document).ready(function(){
 
 
 // });
-
-
-
 
 });
