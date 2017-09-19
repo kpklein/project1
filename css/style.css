@@ -4,7 +4,7 @@ h1{
 }
 
 .gameboard {
-    background-color: #0000ff;
+    background-color: #3333ff;
     text-align: center;
     display: inline-block;
 }
@@ -14,9 +14,9 @@ h1{
 table {
   align-self: center;   
   border-radius:60px;
-  border-left: 10px #0000ff;
-  border-bottom:10px #0000ff;
-  border-right: 10px #0000ff;
+  border-left: 10px #3333ff;
+  border-bottom:10px #3333ff;
+  border-right: 10px #3333ff;
  
 }
 td {
@@ -27,19 +27,20 @@ td {
   font-size: 8em;
   border-radius: 150px;
   background-color: white;
+  cursor: pointer;
 }
 
 .red{
     background-color: red;
-    border-radius: 100%;
 }
 
 .yellow{
     background-color: yellow;
-    border-radius: 100%;
 }
     
-         
+.bounceIn {
+  animation-name: bounceIn;
+}
 
     
 
