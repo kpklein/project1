@@ -4,7 +4,7 @@ h1{
 }
 
 .gameboard {
-    background-color: blue;
+    background-color: #0000ff;
     text-align: center;
     display: inline-block;
 }
@@ -14,19 +14,19 @@ h1{
 table {
   align-self: center;   
   border-radius:60px;
-  border-left: 80px solid blue;
-  border-bottom:80px solid blue;
-  border-right: 80px solid blue;
+  border-left: 10px #0000ff;
+  border-bottom:10px #0000ff;
+  border-right: 10px #0000ff;
  
 }
 td {
-  border: 5px solid black;
+  border: 1px solid white;
   width: 80px;
   height: 80px;
   text-align: center;
   font-size: 8em;
   border-radius: 150px;
-  background-color: #C1C5CA;
+  background-color: white;
 }
 
 .red{
@@ -34,8 +34,8 @@ td {
     border-radius: 100%;
 }
 
-.blue{
-    background-color: blue;
+.yellow{
+    background-color: yellow;
     border-radius: 100%;
 }
     
