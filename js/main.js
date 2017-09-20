@@ -120,7 +120,7 @@ $(function (event){
 		    }
 		    if(winCounter === 4) {
 			      $turnText.html('Game Over, ' + name + ' wins!');
-			      // removeRedandYellowListeners();
+			      removeRedandYellowListeners();
 		    }
 		  }
 		}
@@ -129,18 +129,17 @@ $(function (event){
 	function resetBoard() {
 		for (var i = $boxes.length -1; i>= 0; i--) {
 			var $box = $($boxes[i]);
-			// $box.attr('class', 'clear');
-			$box.removeClass('red yellow')
+			$box.attr('class', 'clear');
 		}
 		redMoves = [];
 		yellowMoves = [];
 		winCounter = 0;
 		counter = 0;
 		console.log('resetBoard')
-		// addRedandYellowListeners()
+		addRedandYellowListeners()
 		$turnText.html("it is red's turn")
-		// removeRedandYellowListeners();
-		// start();
+		removeRedandYellowListeners();
+		start();
 	
 	}
 
