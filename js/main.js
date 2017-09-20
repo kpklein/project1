@@ -88,7 +88,21 @@ $(function (event){
 		}
 	}
 
+	// function to remove all event listeners 
+	function removeRedandYellowListeners(){
+		for (var i = $boxes.length -1; i>=0;i--){
+			var $box = $($boxes[i]);
+			$box.off('click', addRedorYellow);
+		}
+	}
+
 	
+
+
+
+
+
+
 
 
 
