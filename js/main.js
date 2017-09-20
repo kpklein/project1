@@ -37,7 +37,7 @@ $(function (event){
 		}
 	} 
 
-	//the function to set up red and yellow Listeners
+	//this function to set up red and yellow Listeners (adds red or yellow counter to the table)
 	function addRedandYellowListeners(){
 		console.log('setting listeners')
 		for (var i = $boxes.length-1; i>=0; i--){
@@ -120,7 +120,7 @@ $(function (event){
 		    }
 		    if(winCounter === 4) {
 			      $turnText.html('Game Over, ' + name + ' wins!');
-			      removeRedandYellowListeners();
+			      // removeRedandYellowListeners();
 		    }
 		  }
 		}
@@ -129,17 +129,18 @@ $(function (event){
 	function resetBoard() {
 		for (var i = $boxes.length -1; i>= 0; i--) {
 			var $box = $($boxes[i]);
-			$box.attr('class', 'clear');
+			// $box.attr('class', 'clear');
+			$box.removeClass('red yellow')
 		}
 		redMoves = [];
 		yellowMoves = [];
 		winCounter = 0;
 		counter = 0;
 		console.log('resetBoard')
-		addRedandYellowListeners()
+		// addRedandYellowListeners()
 		$turnText.html("it is red's turn")
-		removeRedandYellowListeners();
-		start();
+		// removeRedandYellowListeners();
+		// start();
 	
 	}
 
