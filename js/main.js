@@ -1,36 +1,39 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
-	var player = 1;
+// 	var player = 1;
 
-	$('.box').on('click', function(event){
+// 	$('.box').on('click', function(event){
 
 
-		var boxSelected = $(this);
+// 		var boxSelected = $(this);
 
-	if (boxSelected.hasClass('red') || boxSelected.hasClass('blue')){
+// 	if (boxSelected.hasClass('red') || boxSelected.hasClass('blue')){
 
-		alert('This square has already been selected! please choose another.');
-	}else{
+// 		alert('This square has already been selected! please choose another.');
+// 	}else{
 
-		if (player === 1) {
-			boxSelected.addClass('red');
-			if(checkIfPlayerWon('red')){
-				alert('Conrgats! Player ' + player + 'has won!')
-			}else{
-				player = 2;
-			}
+// 		if (player === 1) {
+// 			boxSelected.addClass('red');
+// 			if(checkIfPlayerWon('red')){
+// 				alert('Conrgats! Player ' + player + 'has won!')
+// 			}else{
+// 				player = 2;
+// 			}
 
 			
-		}else {
-			boxSelected.addClass('yellow');
-			if(checkIfPlayerWon('yellow')){
-				alert('Conrgats! Player ' + player + 'has won!')
-			}else{
-				player = 1;
-			}
-		}
+// 		}else {
+// 			boxSelected.addClass('yellow');
+// 			if(checkIfPlayerWon('yellow')){
+// 				alert('Conrgats! Player ' + player + 'has won!')
+// 			}else{
+// 				player = 1;
+// 			}
+// 		}
 		
-	}
+// 	}
+
+
+$(function (event){
 
 	var $boxes = $("td");
 	//shows each of the player turn
@@ -52,18 +55,40 @@ $(document).ready(function(){
 	// 	});
 	// }
 
+	// function to run  when page loads
+	function start() {
+		removeClear();
+		addRedandYellowListeners();
+		addResetListener();
+		// gameStartSwitch()
+	}
+
+	//Remove clears
+	function removeClear(){
+		for (var i = $boxes.length -1; i>= 0; i--) {
+				var $box = $($boxes[i]);
+				$box.removeClass("clear");
+			}
+	}	
+
+	//FUNCTION TO SET UP DROP BOX LISTENERS
+	function addDropListeners() {
+		for (var i=$boxes.length-1; i>=0;i--) {
+			var $box = $($boxes[i]);
+			$box.on('click', addRedorYellow);
+		}
+	} 
+
+	//the function to set up red and yellow Listeners
+	function addRedandYellowListeners(){
+		console.log('setting listeners')
+		for (var i = $boxes.length-1; i>=0; i--){
+			var $box = $($boxes[i]);
+			$box.on('click', addRedorYellow)
+		}
+	}
 
 	
-	
-
-
-
-
-
-
-
-
-
 
 
 
@@ -207,4 +232,4 @@ $(document).ready(function(){
 
 // // });
 
-});
+
