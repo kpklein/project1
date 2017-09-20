@@ -12,13 +12,6 @@ $(function (event){
 	var redMoves = [];
 	var yellowMoves = [];
 	
-	// function gameStartSwitch() {
-	// 	$('#startButton').click(function () {
-	// 		audio.play();
-	//     $('#startScreen').hide();
-	//     $('#gameScreen').show();
-	// 	});
-	// }
 
 	// function to run  when page loads
 	function start() {
