@@ -1,5 +1,7 @@
 $(function (event){
 	var audio = new Audio("sounds/counter.mp3");
+	var bell = new Audio("sounds/bell.wav");
+
 	var $boxes = $("td");
 	// This shows each of the player turn
 	var $turnText = $('.playerTurn');
@@ -135,6 +137,7 @@ $(function (event){
 		    if(winCounter === 4) {
 			      $turnText.html('Game Over, ' + name + ' wins!');
 			      removeRedandYellowListeners();
+			      bell.play();
 		    }
 		  }
 		}
