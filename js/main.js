@@ -11,6 +11,21 @@ $(function (event){
 	//Created arrays to track the moves of players
 	var redMoves = [];
 	var yellowMoves = [];
+	var play = $(".game-container").hide();
+	var hide = $(".startInstructions").show();
+	var startbuttonhide = $("startButton").show();
+
+	$("#startButton").on("click", function(){
+		$(".game-container").show();
+		$(".startInstructions").hide();
+		$("startButton").hide();
+
+
+	})
+
+
+
+
 	
 
 	// function to run  when page loads
@@ -18,6 +33,7 @@ $(function (event){
 		removeClear();
 		addRedandYellowListeners();
 		addResetListener();
+
 		// gameStartSwitch()
 	}
 

@@ -19,6 +19,10 @@ h2{
    /* border: solid;*/
 }
 
+#gameScreen .header {
+  margin-left: 20%;
+}
+
 .header {
   
     position: absolute;
@@ -36,7 +40,6 @@ h2{
     top:39%;
     left: 38%;
     border: solid blue;
-
 }
 
 .playerTurn {
@@ -46,8 +49,6 @@ h2{
   border-radius: 1PX;
   width: 400px;
   /*height: 50px;*/
-
-
 }
 
 
@@ -57,8 +58,8 @@ table {
   border-left: 10px #3333ff;
   border-bottom:10px #3333ff;
   border-right: 10px #3333ff;
- 
 }
+
 td {
   border: 1px solid white;
   width: 80px;
@@ -83,7 +84,6 @@ td {
     position: absolute;
     bottom:10%;
     left: 75%;
-
 }
 
 #background: {
@@ -103,23 +103,23 @@ td {
   border-radius: 80px;
   border-style: solid;
   position: absolute;
-  top:29%;
-    left: 25%;
+  top:20%;
+    left: 40%;
     bottom: 20%;
 /*  animation-name: bounceIn;
   animation-duration: 0.5s;*/
 }
 
 .startInstructions {
-  height: 30vh;
+  height: 20vh;
   width: 60vw;
   border-style: solid;
-  background-color: #B6EEFF;
+  background-color: yellow;
   text-align: center;
   font-family: "Courier New";
   font-size: 20px;
   position: absolute;
-  top:29%;
+  top:35%;
     left: 25%;
     bottom: 20%;
 /*  animation-name: bounceIn;*/
