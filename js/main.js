@@ -1,5 +1,5 @@
 $(function (event){
-
+	var audio = new Audio("sounds/counter.mp3");
 	var $boxes = $("td");
 	// This shows each of the player turn
 	var $turnText = $('.playerTurn');
@@ -21,6 +21,7 @@ $(function (event){
 		$(".startInstructions").hide();
 		$("startButton").hide();
 		$(".container2").show();
+		
 
 	})
 
@@ -70,7 +71,7 @@ $(function (event){
 	// function to set up reset function listeners
 	function addResetListener() {
 		$('#reset').on('click', resetBoard)
-		// audio.play();
+		
 	}
 
 	function setBoxRedOrYellow($box) {
@@ -106,18 +107,18 @@ $(function (event){
 
 		if ($box1.hasClass("")) {
 			setBoxRedOrYellow($box1);
-			// audio.play();
+			audio.play();
 			} else if ($box2.hasClass("")) {
-				// audio.play();
+				audio.play();
 				setBoxRedOrYellow($box2)
 			} else if ($box3.hasClass("")) {
-				// audio.play();
+				audio.play();
 				setBoxRedOrYellow($box3)
 			} else if ($box4.hasClass("")) {
-				// audio.play();
+				audio.play();
 				setBoxRedOrYellow($box4)
 			} else if ($box5.hasClass("")) {
-				// audio.play();
+				audio.play();
 				setBoxRedOrYellow($box5)
 			}
 		}
