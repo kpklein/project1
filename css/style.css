@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+
 }
 
 h1{
@@ -22,6 +23,7 @@ h2{
 
 #gameScreen .header {
   margin-left: 20%;
+
 }
 
 .header {
@@ -112,7 +114,7 @@ td {
     left: 45%;
 
   animation-name: bounceInDown;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 
 .startInstructions {
@@ -127,9 +129,11 @@ td {
   top:35%;
     left: 25%;
     bottom: 20%;
-/*  animation-name: bounceIn;*/
- /* animation-duration: 0.5s;*/
+    animation-name: bounceInDown;
+    animation-duration: 2s;
 }
+
+
 
 /*ANIMATIONS*/
 

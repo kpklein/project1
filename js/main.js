@@ -25,10 +25,6 @@ $(function (event){
 	})
 
 
-
-
-	
-
 	// function to run  when page loads
 	function start() {
 		removeClear();
