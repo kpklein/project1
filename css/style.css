@@ -86,8 +86,6 @@ td {
 
 }
 
-
-
 #background: {
     background-image: url(images/backgroundimage.jpg)
     background-repeat: no-repeat;
@@ -96,7 +94,7 @@ td {
 #startButton, #reset {
   height: 50px;
   width: 400px;
-  background-color: #B6EEFF;
+  background-color: yellow;
   font-size: 25px;
   cursor: pointer;
   margin-top: 20px;
@@ -104,6 +102,28 @@ td {
   font-family: "courier new";
   border-radius: 80px;
   border-style: solid;
+  position: absolute;
+  top:29%;
+    left: 25%;
+    bottom: 20%;
 /*  animation-name: bounceIn;
   animation-duration: 0.5s;*/
 }
+
+.startInstructions {
+  height: 30vh;
+  width: 60vw;
+  border-style: solid;
+  background-color: #B6EEFF;
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 20px;
+  position: absolute;
+  top:29%;
+    left: 25%;
+    bottom: 20%;
+/*  animation-name: bounceIn;*/
+ /* animation-duration: 0.5s;*/
+}
+
+

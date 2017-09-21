@@ -137,7 +137,7 @@ $(function (event){
 		counter = 0;
 		console.log('resetBoard')
 		addRedandYellowListeners()
-		$turnText.html("it is red's turn")
+		$turnText.html("It's Player 1 turn RED")
 		removeRedandYellowListeners();
 		start();
 	
