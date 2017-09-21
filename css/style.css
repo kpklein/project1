@@ -1,3 +1,9 @@
+body {
+    background: url('../images/backgroundimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 h1{
     text-align: center;
     font-size: 40px;
@@ -9,16 +15,16 @@ h2{
     position: absolute;
     top:29%;
     left: 40%;
-    border: solid;
+    bottom: 20%;
+   /* border: solid;*/
 }
 
 .header {
   
-  
     position: absolute;
-    top:1%;
-    left: 30%;
-    border: solid;
+  
+    left: 31%;
+    /*border: solid;*/
 }
 
 .gameboard {
@@ -27,9 +33,9 @@ h2{
     display: inline-block;
     padding: 10px;
     position: absolute;
-    top:40%;
+    top:39%;
     left: 38%;
-    border: solid;
+    border: solid blue;
 
 }
 
@@ -76,9 +82,28 @@ td {
 .container2{
     position: absolute;
     bottom:10%;
-    left: 35%;
+    left: 75%;
 
 }
 
-    
 
+
+#background: {
+    background-image: url(images/backgroundimage.jpg)
+    background-repeat: no-repeat;
+}
+    
+#startButton, #reset {
+  height: 50px;
+  width: 400px;
+  background-color: #B6EEFF;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  align-items: center;
+  font-family: "courier new";
+  border-radius: 80px;
+  border-style: solid;
+/*  animation-name: bounceIn;
+  animation-duration: 0.5s;*/
+}
