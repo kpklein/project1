@@ -14,12 +14,13 @@ $(function (event){
 	var play = $(".game-container").hide();
 	var hide = $(".startInstructions").show();
 	var startbuttonhide = $("startButton").show();
+	var hideplaybutton = $(".container2").hide();
 
 	$("#startButton").on("click", function(){
 		$(".game-container").show();
 		$(".startInstructions").hide();
 		$("startButton").hide();
-
+		$(".container2").show();
 
 	})
 
