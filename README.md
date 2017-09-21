@@ -1,3 +1,5 @@
+Game Link: https://kpklein.github.io/project1/
+
 Connect 4 Game
 
 The main objective for this project was to design a browser based games using the following programming languages HTML, CSS and Java Script. HTML was used to create the base structure of the webpage. To style the webpage I used CSS because it allows you to style all the elements within the HTML in many different ways. The core function of the game was created using Javascript and Jquery. Jquery is basically a framework which simplifies alot of the keys features.
