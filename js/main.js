@@ -23,18 +23,14 @@ $(function (event){
 		$(".startInstructions").hide();
 		$("startButton").hide();
 		$(".container2").show();
-		
-
 	})
 
 
-	// function to run  when page loads
+	// This function is used to run when page loads
 	function start() {
 		removeClear();
 		addRedandYellowListeners();
 		addResetListener();
-
-		// gameStartSwitch()
 	}
 
 	//Remove clears
@@ -45,7 +41,7 @@ $(function (event){
 			}
 	}	
 
-	//FUNCTION TO SET UP DROP BOX LISTENERS
+	//This FUNCTION is used TO SET UP DROP BOX LISTENERS
 	function addDropListeners() {
 		for (var i=$boxes.length-1; i>=0;i--) {
 			var $box = $($boxes[i]);
@@ -53,7 +49,7 @@ $(function (event){
 		}
 	} 
 
-	//this function to set up red and yellow Listeners (adds red or yellow counter to the table)
+	//This function to set up red and yellow Listeners (adds red or yellow counter to the table)
 	function addRedandYellowListeners(){
 		console.log('setting listeners')
 		for (var i = $boxes.length-1; i>=0; i--){
@@ -62,7 +58,7 @@ $(function (event){
 		}
 	}
 
-	// function to remove all event listeners 
+	// This function is used to remove all event listeners 
 	function removeRedandYellowListeners(){
 		for (var i = $boxes.length -1; i>=0;i--){
 			var $box = $($boxes[i]);
@@ -70,7 +66,7 @@ $(function (event){
 		}
 	}
 
-	// function to set up reset function listeners
+	// This function is used to set up reset function listeners
 	function addResetListener() {
 		$('#reset').on('click', resetBoard)
 		
@@ -95,7 +91,7 @@ $(function (event){
 
 	}
 
-	// function to add red or yellow for choices
+	// This function is used to add red or yellow for choices
 	function addRedorYellow() {
 		var $dropCell = $(this);
 		var $boxes = $('td');
@@ -125,7 +121,7 @@ $(function (event){
 			}
 		}
 
-	// function to check the player has won
+	// This function is used to check the player has won
 	function checkWin(movesArray, name){
 		
 		for(var i = 0; i < winningPossibilities.length; i++){
